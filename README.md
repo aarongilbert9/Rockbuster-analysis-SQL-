@@ -1,20 +1,22 @@
-# SQL-queries-
-# query to identify the top 10 cities that fall within the top 10 countries 
-SELECT C.city, D.country,  
-COUNT(A.customer_id) AS customer_count  
-FROM customer A  
-INNER JOIN address B ON A.address_id = B.address_id  
-INNER JOIN city C ON B.city_id = C.city_id  
-INNER JOIN country D ON C.country_id = D.country_id  
-WHERE D.country IN (  
-SELECT D.country  
-FROM customer A  
-JOIN address B ON A.address_id = B.address_id  
-JOIN city C ON B.city_id = C.city_id  
-JOIN country D ON C.country_id = D.country_id  
-GROUP BY D.country  
-ORDER BY COUNT(A.customer_id) DESC  
-LIMIT 10)  
-GROUP BY C.city, D.country  
-ORDER BY customer_count DESC  
-LIMIT 10
+# SQL-RockbusterVideoRental
+Data-driven presentation to answer the business questions was created for the Management Board, Data dictionary and SQLs used to answer the key questions were shared to the technical team.
+
+## Introduction
+Rockbuster Stealth LLC is a movie rental company that used to have stores around the world. Facing stiff competition from streaming services such as Netflix and Amazon Prime,
+the Rockbuster Stealth management team is planning to use its existing movie licenses to launch an online video rental service in order to stay competitive.
+
+## Key Questions & Objectives
+The Rockbuster Stealth Management Board has asked a series of business questions and they expect data-driven answers that they can use for their 2020 company strategy. Here are
+the main questions they’d like to answer:
+
+● Which movies contributed the most/least to revenue gain?
+● What was the average rental duration for all videos?
+● Which countries are Rockbuster customers based in?
+● Where are customers with a high lifetime value based?
+● Do sales figures vary between geographic regions?
+
+## Data & Tools
+Rockbuster relational database management system and Postgre SQL was used for the analysis purpose. The data set includes information about Rockbuster’s film inventory, customers, payments, stores, staff, films, actors, rental history and addresses.
+
+## Visulizations
+Our movie rental service company currently offer a selection of 1000 films exclusively in the English language, across 17 different categories in 109 country. Take a look at the Tableau Workbook
