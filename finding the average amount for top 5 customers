@@ -1,4 +1,4 @@
-
+# creating a query for finding the average amount paid by the top 5 customers
 SELECT ROUND(AVG(total_amount_paid.total_amount_paid), 2) AS average
 FROM 
 (
