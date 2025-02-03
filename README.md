@@ -18,5 +18,5 @@ the main questions they’d like to answer:
 ## Data & Tools
 Rockbuster relational database management system and Postgre SQL was used for the analysis purpose. The data set includes information about Rockbuster’s film inventory, customers, payments, stores, staff, films, actors, rental history and addresses.
 
-## Visulizations
+## Visulizations Powerpoint
 https://1drv.ms/p/c/35e279f1fac96b8a/EUzwkf4NukNJtHNtJ8t-KaUBePuO4jhzv_VAqmLP-YSudw?e=6iNOIv
