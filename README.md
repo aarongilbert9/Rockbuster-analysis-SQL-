@@ -20,3 +20,4 @@ Rockbuster relational database management system and Postgre SQL was used for th
 
 ## Visulizations
 Our movie rental service company currently offer a selection of 1000 films exclusively in the English language, across 17 different categories in 109 country.
+https://1drv.ms/p/c/35e279f1fac96b8a/EUzwkf4NukNJtHNtJ8t-KaUBePuO4jhzv_VAqmLP-YSudw?e=6iNOIv
